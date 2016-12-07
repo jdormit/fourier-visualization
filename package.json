@@ -1,0 +1,26 @@
+{
+  "name": "fourier-visualization",
+  "version": "0.1.0",
+  "description": "An interactive visualization of the Fourier Transform",
+  "scripts": {
+    "start": "jus serve .",
+    "build": "jus compile . ./dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jdormit/fourier-visualization.git"
+  },
+  "author": "Jeremy Dormitzer <jeremy.dormitzer@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jdormit/fourier-visualization/issues"
+  },
+  "homepage": "https://github.com/jdormit/fourier-visualization#readme",
+  "devDependencies": {
+    "jus": "^0.21.0"
+  },
+  "dependencies": {
+    "mathjs": "^3.8.0",
+    "vis": "^4.17.0"
+  }
+}
