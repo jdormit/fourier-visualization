@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fourier Visualization</title>
+    <script type="text/javascript" src="https://d3js.org/d3.v3.min.js"></script>
+    <!--<script type="text/javascript" src="js/lib/vue.js"></script>-->
+</head>
+<body>
+<div id="app">
+    <div id="input-signal">
+        <svg id="input-graph" width="1000" height="500"></svg>
+        <form id="input-controls">
+            <div id="input-y-values">
+                <input type="text" class="y-value-input" value="1">
+                <input type="text" class="y-value-input" value="2">
+                <input type="text" class="y-value-input" value="3">
+            </div>
+        </form>
+    </div>
+    <!--<div id="polar">-->
+        <!--<svg id="polar-graph"></svg>-->
+    <!--</div>-->
+    <div id="output">
+        <svg id="output-graph" width="1000" height="500"></svg>
+        <form id="output-controls"></form>
+    </div>
+</div>
+<script type="text/javascript" src="js/graph.js"></script>
+</body>
+</html>
