@@ -11,6 +11,21 @@ const fourier = function (in_array) {
         }
         output.push([real, imag])
     }
+
+    output.toString = function() {
+        var str = "";
+        output.forEach(function(val) {
+            str += val[0];
+            if (val[1] < 0) {
+                str += " - " + -val[1] + "i, "
+            }
+            else {
+                str += " + " + val[1] + "i, "
+            }
+        });
+        return str.slice(0, -2);
+    };
+
     return output;
 };
 
@@ -27,6 +42,15 @@ const inverse_fourier = function(in_array) {
         out = out/len;
         output.push(out);
     }
+
+    output.toString = function() {
+        var str = "";
+        output.forEach(function(val) {
+            str += val + ", "
+        });
+        return str.slice(0, -2);
+    };
+
     return output;
 };
 
